@@ -1,0 +1,43 @@
+div.select {
+  border: 3px solid #73ad21;
+}
+
+div.cart {
+  position: absolute;
+  top: 25px;
+  left: 480px;
+  width: 400px;
+  height: 250px;
+  padding: 30px;
+  border: 2px outset;
+  border-radius: 5px;
+  background-color: skyblue;
+  z-index: 1;
+}
+
+table.normal-cart,
+table.dawn-cart {
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr#find {
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  align-items: center;
+  text-align: center;
+}
+
+label.register {
+  font-size: 20px;
+  color: blue;
+}

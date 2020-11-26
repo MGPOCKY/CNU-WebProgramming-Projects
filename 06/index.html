@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <button id="button" onclick="startWorker()">Start</button>
+  Timer :
+  <span id="time_result"></span>
+  <br />
+  이미지 파일 선택
+  <input type="file" id="image">
+  <br />
+  <button id="add_image" onclick="addImage()" disabled>이미지 추가</button>
+  <div id="image_storage"></div>
+  A 바구니
+  <div class="cart" id="div2" ondrop="drop(event, 1)" ondragover="allowDrop(event)"></div>
+  B 바구니
+  <div class="cart" id="div3" ondrop="drop(event, 2)" ondragover="allowDrop(event)"></div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2020 PHP 실습 2</title>
+</head>
+<body>
+  <p>로그인 및 회원 가입하기</p>
+  <form method="POST">
+    <p>아이디 : <input type="text" name="id" id="id" required="required" pattern="([A-Za-z0-9]){6,15}"></p>
+    <p>비밀번호 : <input type="password" name="pw" id="pw" required="required" pattern=".*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*"></p>
+    <input type="submit" value="로그인" formaction="./signIn.php">
+    <input type="submit" value="회원 가입" formaction="./signUp.php">
+    <input type="button" value="초기화" onclick="clearInput()">
+  </form>
+  <script src="./index.js"></script>
+</body>
+</html>
