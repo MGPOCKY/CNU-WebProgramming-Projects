@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/04d907b78e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>ScoreBoard</title>
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+  <div class="container">
+    <br/>
+    <a href="./" class="button-nav"><h1 style="display: inline;">GAMEJudge  </h1></a><a href="./scoreboard" class="button-nav"><h3 style="display: inline;">ScoreBoard  </h3></a>
+    <div class="row">
+      <table id="ranking_table" class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Name</th>
+            <th scope="col">SumScore</th>
+            <th scope="col">Count 15 sec</th>
+            <th scope="col">Memory test</th>
+            <th scope="col">Find Heart</th>
+            <th scope="col">Largest area</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody id="ranking_data">
+        </tbody>
+      </table>
+    </div>
+    <button class="btn btn-primary" onclick="setScoreBoard()">Reload</button>
+    <button class="btn btn-info" onclick="forMoreGame()">For Other Game[Developing :)]</button>
+  </div>
+  <script src="./fifteensec.js"></script>
+  <script src="./mem_test.js"></script>
+  <script src="./find_heart.js"></script>
+  <script src="./largest_area.js"></script>
+  <script src="./rank.js"></script>
+  <script>setScoreBoard();</script>
+</body>
+</html>
