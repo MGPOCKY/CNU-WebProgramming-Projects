@@ -17,7 +17,7 @@ function see_result() {
       input_data(name);
       //setScoreBoard();
       alert("등록되었습니다!");
-      window.location.href = "./scoreboard";
+      window.location.href = "./scoreboard.html";
     } else {
       alert("다시 입력해 주세요");
       see_result();
