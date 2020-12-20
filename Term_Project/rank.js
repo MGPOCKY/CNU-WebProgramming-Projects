@@ -24,7 +24,7 @@ function see_result() {
     if(input) {
       input_data(name);
       alert("등록되었습니다!");
-      window.location.href = "./scoreboard";
+      window.location.href = "./scoreboard.html";
     }
     //사용자의 이름을 다시 입력 받는다
     else {
