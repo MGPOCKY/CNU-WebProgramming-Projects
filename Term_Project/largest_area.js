@@ -17,6 +17,7 @@ function largest_area() {
     document.getElementById("game").innerHTML = `<h4>`+area_score+`점 입니다!!</h4>`;
     document.getElementById("game_process").setAttribute('onclick', 'see_result()');
     document.getElementById("game_process").setAttribute('value', '랭킹 등록');
+    document.getElementById("rule").style.display = "none";
   }, 30000)
 }
 
