@@ -107,6 +107,8 @@ function addScoreBoard(data) {
   parent.innerHTML = "";
   for (let index = 0; index < data.length; index++) {
     const element = data[index];
+    if (isNaN(element["sumscore"]))
+      continue;
     let tr = document.createElement('tr');
     tr.innerHTML = `
     <tr>
