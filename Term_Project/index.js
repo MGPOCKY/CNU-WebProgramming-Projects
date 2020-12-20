@@ -1,3 +1,5 @@
+
+//현재 진행중인 함수에 따라 게임별 게임 규칙 및 방법을 설명해주는 함수
 function show_rule() {
   let parent = document.getElementById("instruction");
   let game_process = String(document.getElementById("game_process").onclick).split('\n')[1];
@@ -5,7 +7,9 @@ function show_rule() {
   parent.innerHTML = result;
 }
 
+//현재 실행중인 함수에 따라서 return 해주는 것들이 각각 다르다.
 function select_show_rule(game) {
+  //15초 세기 게임에 대한 설명
   if(game == "fifteensec()") {
     return `
     <div class="row">
@@ -25,6 +29,7 @@ function select_show_rule(game) {
       </div>
     </div>`;
   }
+  //기억력 테스트 게임에 대한 설명
   else if(game == "mem_test()") {
     return `
     <div class="row">
@@ -44,7 +49,9 @@ function select_show_rule(game) {
         <img src="./image/02/result.png">
       </div>
     </div>`;
-  } else if(game == "find_heart()") {
+  }
+  //하트를 찾아라 게임에 대한 설명
+  else if(game == "find_heart()") {
     return `
     <div class="row">
       <div id="text" class="col-4">
@@ -66,7 +73,9 @@ function select_show_rule(game) {
       </div>
     </div>
     `;
-  } else if(game == "largest_area()") {
+  }
+  //어느곳이 가장 넓을까 게임에 대한 설명
+  else if(game == "largest_area()") {
     return `
     <div class="row">
       <div id="text" class="col-4">

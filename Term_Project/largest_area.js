@@ -1,3 +1,4 @@
+//어느곳이 가장 넓을까 점수를 저장하는 변수
 var area_score = 0;
 
 var color_one;
