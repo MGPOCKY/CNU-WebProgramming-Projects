@@ -13,4 +13,4 @@ http://3.135.209.141/CNU-WebProgramming-Projects/
         - ajax와 json을 이용한 실시간 검색 기능
     6. HTML API를 이용한 드래그 앤 드롭 기능의 게시판
         - 웹 워커를 이용한 타이머 기능
-    7. 추후 추가 예정
+    7. 자유 개인 텀 
